@@ -1,4 +1,4 @@
-windopw.onload = function() {
+window.onload = function() {
     let menuItems = document.querySelectorAll('.right-list li a');
 
     menuItems[0].addEventListener('click', function() {
