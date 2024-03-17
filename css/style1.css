@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F0F0F0;
+    background-size: cover;
+}
+
+header{
+    background-color: #002B5C;
+    padding: 40px 50px; /* Reduced padding for a more compact header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure the header appears above other content */
+}
+
+.right-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.right-list li a{
+    text-decoration: none; /* Remove underline */
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block; /* Display list items horizontally */
+    color: #FFFFFF;
+    padding: 10px 20px; /* Increased padding for better clickability */
+}
+
+.right-list li a.active {
+    background-color: #ffffff;
+    color: #002B5C; /* Change text color for active state */
+    border-radius: 5px;
+}
+
+.right-list li a:hover{
+    background-color: #ffffff;
+    color: #002B5C;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.left-list li h1 {
+    color: #FFFFFF;
+    font-size: 36px; /* Reduced font size for better hierarchy */
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.display {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around; /* Improved spacing for child elements */
+    margin-top: 180px; /* Increased margin for better separation from header */
+}
+
+.display div {
+    flex-basis: calc(33.3333% - 40px); /* Improved responsiveness for child elements */
+    margin-bottom: 40px; /* Increased bottom margin for better spacing */
+}
+
+.display_1 p {
+    font-family: Garamond, serif;
+    padding: 50px;
+    font-size: 80px;
+    color: #002B5C;
+}
+
+.display_2 img{
+    align-items: right;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.display_3{
+    color: #002B5C;
+    padding: 30px;
+}
+
+.display_3 ul{
+    list-style-type: none; /* Remove default list styles */
+    padding: 50px; /* Add some padding */
+    text-align: center;
+}
+
+.display_3 li{
+    font-size: 100px;
+    margin-top: 20px;
+}
+
+.display_3 li:nth-child(1){
+    background-color: red;
+    text-align: left;
+    font-family: Garamond, serif;
+}
+
+.display_3 li:nth-child(2){
+    background-color: orange;
+    text-align: center;
+    font-family: Garamond, serif;
+}
+
+.display_3 li:nth-child(3){
+    background-color: lightblue;
+    text-align: right;
+    font-family: Garamond, serif;
+    margin-bottom: 300px;
+}
+
+footer {
+    background-color: #002B5C;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

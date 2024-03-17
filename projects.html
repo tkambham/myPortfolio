@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF=8">
         <title>TRILOK KAMBHAM-Projects</title>
-        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="css/style_projects.css">
+        <script src="js/menubar.js" defer></script>
     </head>
     <body>
         <header>
@@ -11,12 +13,65 @@
                 <li><h1>TRILOK SAI KAMBHAM</h1></li>
             </ul>
             <ul class="list right-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a>Home</a></li>
+                <li><a>About Me</a></li>
+                <li><a class="active">Projects</a></li>
+                <li><a>Contact</a></li>
             </ul>
         </header>
+        <div class="project_display">
+            <table>
+                <tbody>
+                    <tr class="project_1">
+                        <td class="project_1_txt">
+                            <h2>Plant Disease Classification</h2>
+                            <p><br>This project is to detect the plant disease early to decrease the plant's production  
+                                loss by taking preventive measures. We have used Convolutional Neural 
+                                Networks to extract the features of the leaf and to make the deep learning model.</p>
+                        </td>
+                        <td><img id="project_img1" src="images/project_img1.jpeg" alt="Plant Disease Classification" height="400" width="400"></td>
+                    </tr>
+                    <tr class="project_2">
+                        <td><img id="project_img1" src="images/project_img4.png" alt="Plant Disease Classification" height="400" width="400"></td>
+                        <td>
+                            <h2>Weather Forecasting</h2>
+                            <p><br>Project aims to develop a weather forecasting model using a hybrid approach that combines 
+                                Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) algorithms.The objective 
+                                of the project is to enhance the accuracy of weather predictions by incorporating both spatial 
+                                and temporal dependencies in the model.</p>
+                        </td>
+                    </tr>
+                    <tr class="project_3">
+                        <td>
+                            <h2>Lane Detection</h2>
+                            <p><br>It is a intelligent and efficient lane detecting system using deep learning. Our model will 
+                                use the libraries like tensorflow and keras which will help it to learn the different 
+                                conditions like the rural roads, urban roads, unmarked lanes , steep curves and variable 
+                                visibility due to the climatic conditions.</p>
+                        </td>
+                        <td><img id="project_img1" src="images/project_img3.jpeg" alt="Plant Disease Classification" height="400" width="400"></td>
+                    </tr>
+                    <tr class="project_4">
+                        <td><img id="project_img1" src="images/project_img2.png" alt="Plant Disease Classification" height="400" width="400"></td>
+                        <td>
+                            <h2>Secured File Storage</h2>
+                            <p><br>The main aim of our project is encryption of the data so that no third party applications , 
+                                algorithm can’t access it .</p>
+                        </td>
+                    </tr>
+                    <tr class="project_5">
+                        <td>
+                            <h2>B2B Payment Prediction</h2>
+                            <p><br>The aim of this project predicts the future payment dates that should be paid by the customer. I used Supervised 
+                                learning and Regression method to estimate the Payments of Vendor. I have created a Random 
+                                Forest Regression model to get the best accuracy for my model. For the front end part of the 
+                                project i ahve used React.js and also Material UI.</p>
+                        </td>
+                        <td><img id="project_img1" src="images/project_img5.jpeg" alt="Plant Disease Classification" height="400" width="400"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <footer>
             <p>&copy; 2024 Trilok Kambham</p>
         </footer>

@@ -1,0 +1,101 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mail_contact{
+    margin-top: 180px;
+    text-align: center;
+}
+
+.social_contact{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.contact-direct {
+    margin-top: 10px;
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-between; /* Add space between items */
+    width: 50%;
+    margin-left: 25%;
+}
+
+.contact-social {
+    margin-top: 10px;
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-between; /* Add space between items */
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.contact-info {
+    width: 400px; 
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+}
+
+.contact-item {
+    margin-top: 10px; /* Adjusted margin for better spacing */
+    display: flex;
+    justify-content: center;
+    cursor: pointer;  
+}
+
+.contact-item-heading {
+    background-color:#002B5C;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+.contact-item-heading span{
+    color: #FFFFFF;
+    font-size: 70px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contact-item a {
+    color: #002B5C;
+    text-decoration: none; /* Added to remove underlines from links */
+}
+
+.info_contact li {
+    list-style-type: none; /* Remove default list styles */
+}
+
+.horizonal-line-1 {
+    border-top: 3px solid #002B5C; /* Set the desired thickness and color */
+    border-radius: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+.horizonal-line-2 {
+    border-top: 3px solid #002B5C; /* Set the desired thickness and color */
+    border-radius: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.contact_me {
+    text-align: center;
+    color: #002B5C;
+    font-family: Garamond, serif;
+    font-size: 30px;
+}
+
