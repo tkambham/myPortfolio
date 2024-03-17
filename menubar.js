@@ -1,7 +1,7 @@
 let menuItems = document.querySelectorAll('.right-list li a');
 
 menuItems[0].addEventListener('click', function() {
-    window.location.href = '/';
+    window.location.href = '\';
 });
 
 menuItems[1].addEventListener('click', function() {
