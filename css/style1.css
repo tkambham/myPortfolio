@@ -28,6 +28,10 @@ header{
     margin-right: 20px;
 }
 
+.left-list li {
+    display: inline-block;
+}
+
 .right-list li a{
     text-decoration: none; /* Remove underline */
     font-size: 20px;
