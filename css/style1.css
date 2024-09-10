@@ -133,3 +133,24 @@ footer {
     left: 0;
     width: 100%;
 }
+
+ul.right-list li.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    ul.right-list li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.right-list li.dropdown {
+        display: block;
+    }
+
+    ul.right-list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+}

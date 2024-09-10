@@ -6,17 +6,19 @@
         <link rel="stylesheet" href="css/style1.css">
         
         <script src="menubar.js" type="text/javascript" defer></script>
+        <script src="dropdown.js" type="text/javascript" defer></script>
     </head>
     <body>
         <header>
             <ul class="list left-list">
                 <li><h1>TRILOK SAI KAMBHAM</h1></li>
             </ul>
-            <ul class="list right-list">
+            <ul class="list right-list" id = "dropdown-menu">
                 <li><a class="active">Home</a></li>
                 <li><a href = 'about.html'>About Me</a></li>
                 <li><a href = 'projects.html'>Projects</a></li>
                 <li><a href = 'contact.html'>Contact</a></li>
+                <li class = "dropdown" id="dropdown"><a href = "javascript:void(0)">&#9776</a></li>
             </ul>
         </header>
         <div class="display">
