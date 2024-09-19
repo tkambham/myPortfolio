@@ -1,75 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF=8">
-        <title>TRILOK KAMBHAM-Projects</title>
-        <link rel="stylesheet" href="css/style1.css">
-        <link rel="stylesheet" href="css/style_projects.css">
-        <script src="menubar.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <ul class="list left-list">
-                <li><h1>TRILOK SAI KAMBHAM</h1></li>
-            </ul>
-            <ul class="list right-list">
-                <li><a href = 'index.html'>Home</a></li>
-                <li><a href = 'about.html'>About Me</a></li>
-                <li><a href = 'projects.html' class="active">Projects</a></li>
-                <li><a href = 'contact.html'>Contact</a></li>
-            </ul>
-        </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRILOK KAMBHAM - Projects</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style_projects.css">
+    <script src="menubar.js" defer></script>
+</head>
+<body>
+    <header>
+        <ul class="list left-list">
+            <li><h1>TRILOK SAI KAMBHAM</h1></li>
+        </ul>
+        <ul class="list right-list">
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about.html'>About Me</a></li>
+            <li><a href='projects.html' class="active">Projects</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+        </ul>
+    </header>
+    <main>
         <div class="project_display">
             <table>
                 <tbody>
                     <tr class="project_1">
                         <td class="project_1_txt">
                             <h2>Plant Disease Classification</h2>
-                            <p>
-                                <br>The project focuses on early plant disease detection to minimize production losses 
-                                through preventive measures. We employed Convolutional Neural Networks (CNNs) to 
-                                extract leaf features and develop a deep learning model. This approach leverages 
-                                advanced technology to enhance agricultural practices by identifying and addressing 
-                                potential threats to plant health proactively. The utilization of CNNs allows for 
-                                accurate and efficient disease diagnosis, aiding farmers in making timely and 
-                                informed decisions to ensure optimal crop yield and sustainability.
-                            </p>
+                            <p>The project focuses on early plant disease detection to minimize production losses through preventive measures.</p>
+                            <div class="more-info" style="display:none;">
+                                <p>This approach enhances agricultural practices by identifying potential threats to plant health proactively.</p>
+                            </div>
                         </td>
-                        <td><img id="project_img1" src="images/project_img1.jpeg" alt="Plant Disease Classification" height="400" width="400"></td>
+                        <td>
+                            <div class="image-container">
+                                <img class="project-img" src="images/project_img1.jpeg" alt="Plant Disease Classification" height="400" width="400">
+                            </div>
+                        </td>
                     </tr>
                     <tr class="project_2">
-                        <td><img id="project_img1" src="images/project_img4.png" alt="Plant Disease Classification" height="400" width="400"></td>
                         <td>
+                            <div class="image-container">
+                                <img class="project-img" src="images/project_img2.png" alt="Weather Forecasting" height="400" width="400">
+                            </div>
+                        </td>
+                        <td class="project_2_txt">
                             <h2>Weather Forecasting</h2>
                             <p>
                                 <br>The project merges CNN and LSTM algorithms in a hybrid model to boost weather 
-                                prediction accuracy. This fusion integrates spatial and temporal dependencies, 
-                                enhancing forecast reliability. CNNs analyze spatial data, while LSTMs capture 
-                                temporal patterns, improving overall prediction quality. The goal is to aid 
-                                decision-making in sectors relying on precise weather forecasts. This innovative 
-                                approach benefits agriculture, transportation, and disaster management. The hybrid 
-                                model represents a substantial advancement in weather prediction capabilities.
+                                prediction accuracy. 
                             </p>
+                            <div class="more-info" style="display:none;"></div>
+                                <p>This fusion integrates spatial and temporal dependencies, 
+                                    enhancing forecast reliability. CNNs analyze spatial data, while LSTMs capture 
+                                    temporal patterns, improving overall prediction quality. The goal is to aid 
+                                    decision-making in sectors relying on precise weather forecasts. This innovative 
+                                    approach benefits agriculture, transportation, and disaster management. The hybrid 
+                                    model represents a substantial advancement in weather prediction capabilities.</p>
+                            </div>
                         </td>
                     </tr>
                     <tr class="project_3">
-                        <td>
+                        <td class="project_3_txt">
                             <h2>Lane Detection</h2>
                             <p>
                                 <br>The project focuses on an intelligent lane detecting system using deep learning, 
-                                leveraging TensorFlow and Keras libraries. It aims to learn and identify diverse 
-                                road conditions like rural roads, urban roads, unmarked lanes, steep curves, and 
-                                varying visibility due to climatic conditions. This system promises efficient 
-                                detection and adaptation to different environments, enhancing road safety and 
-                                navigation accuracy. By utilizing advanced deep learning techniques, the project 
-                                addresses the challenges posed by complex road scenarios, contributing to the 
-                                development of smarter transportation systems.
+                                leveraging TensorFlow and Keras libraries. 
                             </p>
+                            <div class="more-info" style="display:none;"></div>
+                                <p>It aims to learn and identify diverse 
+                                    road conditions like rural roads, urban roads, unmarked lanes, steep curves, and 
+                                    varying visibility due to climatic conditions. This system promises efficient 
+                                    detection and adaptation to different environments, enhancing road safety and 
+                                    navigation accuracy. By utilizing advanced deep learning techniques, the project 
+                                    addresses the challenges posed by complex road scenarios, contributing to the 
+                                    development of smarter transportation systems.
+                                </p>
+                            </div>
                         </td>
-                        <td><img id="project_img1" src="images/project_img3.jpeg" alt="Plant Disease Classification" height="400" width="400"></td>
+                        <td><img id="project_img1" src="images/project_img3.jpeg" alt="Lane Detection" height="400" width="400"></td>
                     </tr>
                     <tr class="project_4">
-                        <td><img id="project_img1" src="images/project_img2.png" alt="Plant Disease Classification" height="400" width="400"></td>
+                        <td><img id="project_img1" src="images/project_img2.png" alt="Secured File Storage" height="400" width="400"></td>
                         <td>
                             <h2>Secured File Storage</h2>
                             <p>
@@ -101,8 +113,21 @@
                 </tbody>
             </table>
         </div>
-        <footer>
-            <p>&copy; 2024 Trilok Kambham</p>
-        </footer>
-    </body>
+        <div class="overlay" style="display:none;">
+            <div class="overlay-content" onclick="closeOverlay()">
+                <div class="overlay-left">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <div class="overlay-right">
+                    <img src="" alt="" class="overlay-image">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Trilok Kambham</p>
+    </footer>
+    <script src="projects_hover.js"></script>
+</body>
 </html>

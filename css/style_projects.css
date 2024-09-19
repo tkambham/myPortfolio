@@ -1,4 +1,4 @@
-.project_display{
+.project_display {
     height: 100%;
     display: flex;
     align-items: center;
@@ -6,50 +6,60 @@
     padding-top: 40px;
 }
 
-.project_display table{
+.project_display table {
     margin-top: 15%;
     color: #000000;
     text-align: center;
     margin-bottom: 15%;
     width: 90%; /* Adjusted table width for better responsiveness */
+    border-collapse: collapse; /* Better spacing and styling */
 }
 
-.project_display table tr{
+.project_display table tr {
     display: flex;
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid #ccc; /* Add border between projects */
 }
 
-.project_display table tr td:nth-child(1){
+.project_display table tr:last-child {
+    border-bottom: none; /* Remove border for the last row */
+}
+
+.project_display table tr td:nth-child(1) {
     flex-grow: 1;
-    align-items: center;
     margin-right: 8%;
     margin-left: 10%;
 }
 
-.project_display table tr td:nth-child(2){
+.project_display table tr td:nth-child(2) {
     flex-grow: 2;
-    align-items: center;
     margin-right: 10%;
     margin-left: 8%;
 }
 
-.project_display table tr td img{
-    border-radius: 200px;
+.project_display table tr td img {
+    border-radius: 50%; /* Make the images circular */
     background-color: transparent;
     border: 2px solid #002B5C;
+    transition: transform 0.3s; /* Add a hover effect */
+    object-fit: cover; /* Ensure the image covers the circle */
 }
 
-.project_display table tr td h2{
+.project_display table tr td img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+.project_display table tr td h2 {
     font-size: 45px;
     color: #002B5C;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.project_display table tr td p{
+.project_display table tr td p {
     font-size: 20px;
     text-align: justify;
     color: #002B5C;
@@ -65,7 +75,7 @@
     }
 
     .project_display table tr td h2 {
-        font-size: 36px; /* Reduce font size for smaller screens */;
+        font-size: 36px; /* Reduce font size for smaller screens */
     }
 
     .project_display table tr td p {
@@ -73,11 +83,64 @@
         width: 100%;
     }
 
-    .project_display table tr td img{
+    .project_display table tr td img {
         height: 200px;
         width: 200px;
-        border-radius: 200px;
-        background-color: transparent;
-        border: 2px solid #002B5C;
+        border-radius: 10px;
     }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure it is above all other content */
+}
+
+.overlay-content {
+    display: flex;
+    width: 50%; /* Set width to 50% */
+    height: 50%; /* Set height to 50% */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay-left {
+    flex: 1;
+    padding: 20px;
+    color: #002B5C; /* Text color */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background for text */
+    overflow-y: auto; /* Scrollable if content is long */
+}
+
+.overlay-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* Cover the area with the image */
+}
+
+.overlay-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the space */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Font sizes for heading and paragraphs */
+.overlay-left h2 {
+    font-size: 36px; /* Heading size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.overlay-left p {
+    font-size: 18px; /* Paragraph size */
 }
