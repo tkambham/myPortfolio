@@ -2,10 +2,10 @@ document.querySelectorAll('.project-img').forEach(img => {
     img.addEventListener('click', function() {
         const overlay = document.querySelector('.overlay');
         const overlayContent = document.querySelector('.overlay-content');
-        
+
         // Set the content of the overlay
         overlayContent.querySelector('h2').textContent = this.closest('tr').querySelector('h2').textContent;
-        overlayContent.querySelector('p').textContent = this.closest('tr').querySelector('.more-info').innerText || '';
+        overlayContent.querySelector('.overlay-left p').textContent = this.closest('tr').querySelector('.more-info p').textContent;
         overlayContent.querySelector('.overlay-image').src = this.src;
 
         // Set the background of the right section to the clicked image
